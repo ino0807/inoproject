@@ -5,7 +5,7 @@ https://velog.io/@hyeongjun/Git-GitHub-Repository%EC%97%90-push-%ED%95%98%EB%8A%
 
 php 환경설정
 
-https://plan2018.tistory.com/829  참고 링크
+https://plan2018.tistory.com/829
 비트나미 WAMP다운로드 받기
 WAMP공식 다운로드 페이지(https://bitnami.com/stacks/infrastructure) 이동했는데 WAMP를 못찾음
 

@@ -1,2 +1,13 @@
-https://soda-dev.tistory.com/52#google_vignette
-로컬호스트 실행 안됨
+documentRoot 위치로 로컬호스트가 실행됨
+documentRoot 위치 C:\APM\Apache24\htdocs
+index of
+파일 목록 노출
+Options Indexes FollowSymLinks 
+인덱스 지우면 목록이 숨겨짐
+접근 불가 뜸
+
+Indexes : 웹 서버 디렉토리 접근 시 index.html의 파일이 없을 때 디렉토리 내 파일 목록 리스트를 웹브라우저에 출력함.
+
+index.php 파일 만들고 난 뒤 파일 목록이 숨겨지면서 페이지 접근 가능
+
+

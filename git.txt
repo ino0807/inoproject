@@ -18,7 +18,6 @@ git clone:원격 저장소 코드를 통채로 가져옴
 git checkout:파일을 변경하거나 복원할 때 사용
 git switch:파일을 변경할 때 사용(checkout에 많은 기능이 있어서 분할하여 기능을 새로 추가)
 git restore: 파일을 복원할 때 사용(checkout에 많은 기능이 있어서 분할하여 기능을 새로 추가)
-ㅎㅎㅎ
 
 
 

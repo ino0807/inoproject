@@ -7,13 +7,12 @@ https://velog.io/@hyeongjun/Git-GitHub-Repository%EC%97%90-push-%ED%95%98%EB%8A%
 
 git 명령어 공부
 git init: 새로운 git저장소를 생성할 때 사용하는 명령어이다
-git status:파일 수정 변경이 일어나면 해당 파일의 상태를 보여주는 명령어이다
-git add:특정 파일을 준비시키는 명령어
-git add. 현재 폴더의 모든 파일을 add한다
+git status:현재 파일의 상태를 확인할 수 있다
+git add:작업 디렉토리 상의 변경 내용을 스테이징 영역에 추가하기 위해서 사용하는 명령어
+git add. : working directory에 있는 파일 중에서 변경된 모든 파일을 선택하는 명령어이다
 git commit:로컬 저장소에 변경된 파일을 commit 한다
 git push:로컬 저장소에 커밋된 파일을 원격 저장소에 push하는 명령어이다
-git branch [브랜치명]:새로운 브랜치 생성
-git branch: 브랜치 전부 조회
+git branch:사용자가 독립적으로 작업을 진행할 수 있도록 돕는 작업 흐름이다.
 git pull:특정 브랜치 코드 가져온다
 git clone:원격 저장소 코드를 통채로 가져옴
 git checkout:파일을 변경하거나 복원할 때 사용

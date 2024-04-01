@@ -1,3 +1,7 @@
+
+https://soda-dev.tistory.com/52#google_vignette 참고 링크
+
+
 documentRoot 위치로 로컬호스트가 실행됨
 documentRoot 위치 C:\APM\Apache24\htdocs
 index of

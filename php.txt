@@ -90,3 +90,17 @@ $(변수이름)
     echo "둘 중 큰 수는 {$result} 입니다.";
 ?>
 결과값:둘 중 큰 수는 10 입니다
+
+데이터베이스 연결 예시
+<?php
+$host = 'localhost'; // MySQL 호스트
+$username = 'root'; // MySQL 사용자명
+$password = 'password'; // MySQL 비밀번호
+$database = 'mydatabase'; // 사용할 데이터베이스명
+
+$conn = mysqli_connect($host, $username, $password, $database);
+
+if (!$conn) {
+    die('MySQL 연결 실패: ' . mysqli_connect_error());
+}
+?>

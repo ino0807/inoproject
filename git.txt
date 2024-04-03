@@ -3,7 +3,7 @@ git push
 참고 링크
 https://velog.io/@hyeongjun/Git-GitHub-Repository%EC%97%90-push-%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-%ED%8C%8C%EC%9D%BC-%EC%98%AC%EB%A6%AC%EA%B8%B0
 
-
+git pull 저장/변경된 내용 가져옴
 
 git 명령어 공부
 git init: 새로운 git저장소를 생성할 때 사용하는 명령어이다

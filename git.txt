@@ -17,7 +17,7 @@ git commit -m "커밋메세지"
 스테이징 영역의 파일들을 커밋하여 Repository에 저장한다.
 
 git push:로컬 저장소에 커밋된 파일을 원격 저장소에 push하는 명령어이다
-git push <저장소명> <브랜치명>//
+git push <저장소명> <브랜치명>// git push
 
 git branch:사용자가 독립적으로 작업을 진행할 수 있도록 돕는 작업 흐름이다.
 

@@ -12,3 +12,5 @@ Options Indexes FollowSymLinks
 
 index파일 만들면 정상 작동 가능함
 
+hihi 변경확인
+

@@ -2,6 +2,9 @@
 mysql -u root -p
 1234
 
+create database "이름";
+
+
 
 
 <?php

@@ -12,5 +12,5 @@ Options Indexes FollowSymLinks
 
 index파일 만들면 정상 작동 가능함
 
-hihi 변경확인
 
+LoadModule php_module "C:/APM/php8/php8apache2_4.dll"  PHP8버전을 지원하는 모듈 로드

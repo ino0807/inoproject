@@ -14,9 +14,6 @@ $password = 'password'; // MySQL 비밀번호
 $database = 'mydatabase'; // 사용할 데이터베이스명
 
 $conn = mysqli_connect($host, $username, $password, $database);
-
-
-
 if (!$conn) {
     die('MySQL 연결 실패: ' . mysqli_connect_error());
 }

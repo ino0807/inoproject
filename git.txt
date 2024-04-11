@@ -79,5 +79,26 @@ git pull origin master --allow-unrelated-histories
 해결코드
 
 
+맨 처음 프로젝트 올릴 때 git init(중요)
+
+git remote add origin 레퍼지토리 주소 (저장소 연결)
+
+git checkout -b "브랜치명" (브랜치 변경)
+
+
+
+git 충돌(marge 명령어로 브랜치 합칠 때) :
+
+같은 파일의 기존에 있던 코드와 새로운 코드가 합쳐질 시 생김
+
+accept incoming change (새로운 코드를 받아드림)
+
+Accept current change (기존의 코드를 사용)
+
+같은 파일로 두사람 이상 작업 시 에러나기 쉬움
+
+파일을 다르게 하면 충돌이 안 남
+
+
 
 

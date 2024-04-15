@@ -91,14 +91,24 @@ git 충돌(marge 명령어로 브랜치 합칠 때) :
 
 같은 파일의 기존에 있던 코드와 새로운 코드가 합쳐질 시 생김
 
-accept incoming change (새로운 코드를 받아드림)
+accept incoming change (새로운 코드를 받아드림)툴
 
-Accept current change (기존의 코드를 사용)
+Accept current change (기존의 코드를 사용)툴
 
 같은 파일로 두사람 이상 작업 시 에러나기 쉬움
 
 파일을 다르게 하면 충돌이 안 남
 
+git branch  로컬 브랜치 목록 조회
+git branch -r 원격 브랜치 목록 조회
+git branch -a 모든 브랜치 목록 조회
 
+git remote -v 현재 연결되어 있는 remote 저장소 url 주소 확인
+
+git remote set-url origin "url주소" 연결되어 있는 remote 저장소 url 주소 변경
+
+git merge -Xours targetBranch 현재 브랜치로 사용
+
+git merge -Xtheirs targetBranch 가져온 브랜치로 사용
 
 

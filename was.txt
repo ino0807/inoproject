@@ -19,3 +19,36 @@ LoadModule php_module "C:/APM/php8/php8apache2_4.dll"  PHP8버전을 지원하�
 
 vhost 설정
 Include conf/extra/httpd-vhosts.conf (주석해제)
+
+메모장 관리자 실행 hosts
+127.0.0.1   ino.local 추가
+
+httpd-vhosts.conf파일에 추가
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot "C:/APM/Apache24/htdocs/example"
+    ServerName localhost
+    ErrorLog "logs/localhost-error.log"
+    CustomLog "logs/localhost-access.log" common
+</VirtualHost>
+설정한 뒤 localhost로 해당 파일이 열림
+
+localhost가 80포트를 읽게 설정되어있어서 그랬음
+
+<VirtualHost *:8080>
+    ServerAdmin webmaster@localhost
+    DocumentRoot "C:/APM/Apache24/htdocs/example"
+    ServerName localhost
+    ErrorLog "logs/localhost-error.log"
+    CustomLog "logs/localhost-access.log" common
+</VirtualHost>
+
+포트번호를 8080으로 바꾼 뒤 8080포트를 읽는 localhost로 실행하면 도큐먼트 루트에 설정한 디렉토리 안의 파일이 열림
+
+
+DocumentRoot "C:/APM/Apache24/htdocs/example"
+
+도메인 생성이 제대로 되지 않아서 해당 설정 외에는 적용이 되지 않음
+
+설정한 도메인: 127.0.0.1   ino.local

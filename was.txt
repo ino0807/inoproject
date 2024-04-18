@@ -21,7 +21,7 @@ vhost 설정
 Include conf/extra/httpd-vhosts.conf (주석해제)
 
 메모장 관리자 실행 hosts
-127.0.0.1   ino.local 추가
+127.0.0.1   ino.local
 
 httpd-vhosts.conf파일에 추가
 
@@ -52,3 +52,38 @@ DocumentRoot "C:/APM/Apache24/htdocs/example"
 도메인 생성이 제대로 되지 않아서 해당 설정 외에는 적용이 되지 않음
 
 설정한 도메인: 127.0.0.1   ino.local
+
+
+vhost재설정
+
+메모장 관리자 실행 hosts
+127.0.0.1   ino.local.com
+127.0.0.1   ino.local2.com //도메인 ip주소 설정
+
+vhosts 파일 설정
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@ino.local
+    DocumentRoot "C:/APM/Apache24/htdocs"
+    ServerName ino.local.com
+    ServerAlias www.ino.local.com
+    ErrorLog "logs/ino.local-error.log"
+    CustomLog "logs/ino.local-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>   //80포트에서 들어오는 요청 처리
+    ServerAdmin webmaster@ino.local2  //가상 호스트의 관리자 이메일 주소 지정
+    DocumentRoot "C:/APM/Apache24/htdocs/example"   //웹 사이트 파일이 위치하는 디렉토리를 지정
+    ServerName ino.local2.com   //연결할 도메인 이름 지정(hosts에 설정한 도메인과 같아야함
+    ServerAlias www.ino.local2.com     //별칭 지정(해당 도메인도 연결 가능
+    ErrorLog "logs/ino.local-error.log"     //가상 호스트의 에러 로그 파일 경로를 지정
+    CustomLog "logs/ino.local-access.log" common    //가상 호스트의 액세스 로그 파일 경로를 지정
+</VirtualHost>
+
+액세스 로그: 웹 서버가 클라이언트의 요청에 응답할 때
+ 발생하는 모든 액세스(접근)에 대한 정보를 기록하는 로그 파일
+
+vhost 정상 작동함 안 되던 이유는 도메인 이름이 잘못되었음 ino.local(x) ino.local.com(o)
+이름 중요 **.com
+
+

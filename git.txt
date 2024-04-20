@@ -84,8 +84,8 @@ git pull origin master --allow-unrelated-histories
 git remote add origin 레퍼지토리 주소 (저장소 연결)
 
 git checkout -b "브랜치명" (브랜치 변경)
-
-
+*처음 브랜치를 생성하고 해당 브랜치로 넘어가는 명령어 이미 브랜치가 생성되었으면 사용할 수 없음
+git checkout "브랜치명"으로 대체할 수 있음
 
 git 충돌(marge 명령어로 브랜치 합칠 때) :
 

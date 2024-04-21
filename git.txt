@@ -111,4 +111,5 @@ git merge -Xours targetBranch 현재 브랜치로 사용
 
 git merge -Xtheirs targetBranch 가져온 브랜치로 사용
 
+git 충돌테스트
 
